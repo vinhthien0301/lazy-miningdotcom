@@ -1,0 +1,9 @@
+{
+    "database_host": "localhost",
+    "database_port": "3306",
+    "database_username": "lazyuser",
+    "database_password": "123456",
+    "database_name": "lazydb",
+    "log_level": "DEBUG",
+    "listen_port": "3563"
+}

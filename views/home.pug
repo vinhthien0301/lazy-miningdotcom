@@ -1,0 +1,629 @@
+doctype html
+html(lang="zxx")
+    head
+        meta(charset="utf-8")
+        |
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        |
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        |
+        title Lazy Mining - Tự động hoá tất cả
+        |
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700", rel="stylesheet")
+        |
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:600", rel="stylesheet")
+        |
+        link(rel="stylesheet", href="assets/css/applify.min.css")
+        |
+        script(src="https://cdn.onesignal.com/sdks/OneSignalSDK.js", async="")
+        |
+        script.
+            var OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                    appId: "acd041b9-acbe-4809-ad3c-430e0ad39362",
+                });
+            });
+    body.ui-transparent-nav(data-fade_in="on-load")
+        // Navbar Fixed + Default
+        nav.navbar.navbar-fixed-top.transparent.navbar-light.bg-white
+            .container
+                // Navbar Logo
+                a.ui-variable-logo.navbar-brand(href="index.html", title="Lazy Mining - Tự động hoá tất cả")
+                    // Default Logo
+                    img.logo-default(src="assets/img/logo/applify-logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                    // Transparent Logo
+                    img.logo-transparent(src="assets/img/logo/applify-logo-white.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                // .navbar-brand
+                // Navbar Navigation
+                .ui-navigation.navbar-center
+                    ul.nav.navbar-nav
+                        // Nav Item
+                        li
+                            a(href="#", data-scrollto="features") Tính năng
+                        // Nav Item
+                        li
+                            a(href="#", data-scrollto="showcase") Di động
+                        // Nav Item
+                        li
+                            a(href="#", data-scrollto="integrate") Tích hợp
+                        // Nav Item
+                        li
+                            a(href="#", data-scrollto="management") Quản lý
+                        // Nav Item
+                        li
+                            a(href="#", data-scrollto="how-it-works") Cài đặt
+                        // &lt;!&ndash; Nav Item &ndash;&gt;
+                        // <li>
+                        // <a href="#" data-scrollto="testimonials">Nhận xét</a>
+                        // </li>
+                    // .navbar-nav
+                // .ui-navigation
+                // Navbar Toggle
+                a.ui-mobile-nav-toggle.pull-right(href="#")
+                // Navbar Button
+                a.btn.btn-sm.ui-gradient-green.pull-right(href="login") Đăng nhập
+            // .container
+        // nav
+        // Main Wrapper
+        .main(role="main")
+            // Hero
+            .ui-hero.hero-lg.hero-center.hero-svg-layer-2.bg-indigo.ui-tilt
+                .container
+                    .row
+                        .col-sm-12(data-vertical_center="true", data-vertical_offset="16")
+                            h1.heading.animate(data-show="fade-in-up-big", data-delay="100")
+                                | Đào coin chưa bao giờ dễ dàng hơn với Lazy Mining
+                            |
+                            p.paragraph
+                                | Chúng tôi cung cấp giải pháp phần mềm quản lý, giám sát, cấu hình
+                                | máy đào số lượng lớn một cách hoàn toàn tự động.
+                                | Cùng với hệ thống tính toán lợi nhuận coin trong tương lai sẽ giúp bạn tôi ưu hoá lợi nhuận.
+                            |
+                            .actions.animate(data-show="fade-in-up-big", data-delay="600")
+                                a.btn.ui-gradient-peach.shadow-xl(href="#", data-scrollto="features") Xem Thêm
+                                // <a href="#" class="btn ui-gradient-green shadow-xl">Giá cả</a>
+                        |
+                        .col-sm-12.animate(data-show="fade-in-up")
+                            img#banner.responsive-on-lg(alt="Lazy Mining - Tự động hoá tất cả", data-uhd="", data-max_width="1000")
+                    // .row
+                // .container
+            // .ui-hero
+            // App Features Section
+            #features.section
+                .container.ui-icon-blocks.ui-blocks-h.icons-lg
+                    .row
+                        .col-sm-4.ui-icon-block
+                            .icon.icon-lg.icon-circle.icon-rocket.ui-gradient-blue
+                            |
+                            h4 Tự động hoá
+                            |
+                            p
+                                | Việc của bạn chỉ là chọn lựa đồng coin tốt để đào và sử dụng các ứng dụng của Lazy Mining,
+                                | còn lại Lazy Mining sẽ giám sát cho bạn
+                        |
+                        .col-sm-4.ui-icon-block
+                            .icon.icon-lg.icon-circle.icon-ghost.ui-gradient-peach
+                            |
+                            h4 Tiết kiệm thời gian
+                            |
+                            p
+                                | Chúng tôi cung cấp những đoạn mã tự sửa những lỗi thông thường và có những gợi ý giúp bạn
+                                | giải quyết vấn đề máy đào trục trặc một cách nhanh nhất có thể.
+                        |
+                        .col-sm-4.ui-icon-block
+                            .icon.icon-lg.icon-circle.icon-trophy.ui-gradient-green
+                            |
+                            h4 Thời gian thực
+                            |
+                            p
+                                | Bạn sẽ được thông báo ngay lập tức nếu có bất kỳ trục trặc gì xảy ra trên máy đào bằng
+                                | cách cài ứng dụng di động của Lazy Mining
+                    // .row
+                // .container
+            // .section
+            // Showcase Blocks Section
+            #showcase.section.bg-light
+                .container
+                    // Section Heading
+                    .section-heading.center
+                        h2.heading.text-indigo
+                            | Ứng dụng di động LAZY MINING
+                        |
+                        p.paragraph
+                            | Đã có mặt trên App Store và Google Play với những chức năng ưu việt sẽ khiến bạn hài lòng 100%
+                    // .section-heading
+                    .ui-showcase-blocks
+                        .row
+                            .col-md-6(data-vertical_center="true")
+                                h4.heading
+                                    | Thông báo sự cố qua thông điệp đẩy (Push Notification)
+                                |
+                                p.paragraph
+                                    | Khi có sự cố, hệ thống sẽ thông báo ngay lập tức trên ứng dụng di động và kể cả khi bạn không mở ứng dụng Lazy Mining. Với những gợi ý hữu ích, mọi thứ sẽ trở nên dễ dàng.
+                                // <a href="#" class="btn-link btn-arrow">Explore</a>
+                            |
+                            .col-md-6
+                                img#image.responsive-on-xs(data-uhd="", alt="Lazy Mining - Tự động hoá tất cả", data-max_width="464")
+                        |
+                        .row
+                            .col-md-6(data-vertical_center="true")
+                                h4.heading
+                                    | Phản ứng nhanh chóng
+                                |
+                                p.paragraph
+                                    | Bạn có thể khởi động lại máy đào từ xa qua ứng dụng di động Lazy Mining.
+                                // <a href="#" class="btn-link btn-arrow">Explore</a>
+                            |
+                            .col-md-6
+                                img#image2.responsive-on-xs(data-uhd="", alt="Lazy Mining - Tự động hoá tất cả", data-max_width="451")
+                // .container
+            // .section
+            // Integration Section
+            #integrate.section.bg-indigo
+                .container
+                    .row
+                        // Left Column
+                        .col-xl-6.col-lg-5(data-vertical_center="true")
+                            // Section Heading
+                            .section-heading.mb-2.center-on-md
+                                h2.heading
+                                    | Tích hợp đa dạng
+                                |
+                                p.paragraph
+                                    | Để tăng sức mạnh của Lazy Mining, chúng tôi phải tích hợp với các hệ thống bên thứ 3 để lấy
+                                    | thông tin, so sánh, đánh giá các dữ liệu phục vụ cho công việc giám sát, cũng như tính toán
+                                    | lợi nhuận của các đồng coin.
+                            // .section-heading
+                            // Left blocks
+                            ul.ui-icon-blocks.ui-blocks-v.icons-sm.center-on-md
+                                li.ui-icon-block
+                                    span.icon.icon-diamond
+                                    |
+                                    p
+                                        | Số lượng đồng coin có thể đào được luôn luôn tăng dần theo thời gian.
+                                    // <a class="btn-link btn-arrow">
+                                    // Xem thêm
+                                    // </a>
+                                |
+                                li.ui-icon-block
+                                    span.icon.icon-pie-chart
+                                    |
+                                    p
+                                        | Các API của các phần mềm đào bên thứ 3 luôn được chúng tôi tận dụng tối đa
+                                    // <a class="btn-link btn-arrow">
+                                    // Xem thêm
+                                    // </a>
+                                |
+                                li.ui-icon-block
+                                    span.icon.icon-layers
+                                    |
+                                    p
+                                        | Chúng tôi cũng liên kết với khá nhiều các sàn giao dịch tiền kỹ thuật số.
+                                    // <a class="btn-link btn-arrow">
+                                    // Xem thêm
+                                    // </a>
+                        // Right Column
+                        .col-xl-6.col-lg-7
+                            // Logo Cloud
+                            .ui-logos-cloud
+                                .mt-0.animate(data-size="4", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/etn.svg", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .mt-0.animate(data-size="10", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/eth.svg", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .mt-0.animate(data-size="7", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/zec.svg", alt="Lazy Mining - Tự động hoá tất cả")
+                                // Flex Break
+                                span.flex-break
+                                |
+                                .animate(data-size="4", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/xuc.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="10", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/xmr.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="4", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/xas.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="6", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/ven.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="3", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/tkn.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                // Flex Break
+                                span.flex-break
+                                |
+                                .animate(data-size="8", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/storj.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="3", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/taas.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="10", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/sc.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="5", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/qiwi.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                // Flex Break
+                                span.flex-break
+                                |
+                                .animate(data-size="3", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/ppc.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="10", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/btg.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                |
+                                .animate(data-size="7", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/hsr.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                                // Flex Break
+                                span.flex-break
+                                |
+                                .mb-0.animate(data-size="4", data-show="fade-in")
+                                    img(src="assets/img/3rd-party-logos/coin/cdt.svg", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                            // .ui-logo-cloud
+                    // .row
+                // .container
+            // .section
+            // Big Image Section
+            #management.section
+                .container
+                    .row
+                        .col-lg-6(data-vertical_center="true")
+                            .section-heading.center-on-md
+                                h2.heading.text-indigo
+                                    | Giao diện quản lý trên nền web
+                                    br
+                                    |  Thân thiện!
+                                |
+                                p.paragraph
+                                    | Dù bạn đang sử dụng thiết bị gì, máy tính, máy tính bảng, hoặc di động,
+                                    | bạn đều có thể cấu hình các máy đào số lượng lớn và tập trung
+                                    | trên giao diện web quản lý máy đào của Lazy Mining.
+                                |
+                                .actions
+                                    a.btn.ui-gradient-peach.shadow-xl(href="login") Đăng nhập ngay
+                                    |
+                                    a.btn.ui-gradient-green.shadow-xl(href="#", data-scrollto="how-it-works") Hướng dẫn sử dụng
+                            // .section-heading
+                        |
+                        .col-lg-6
+                            img#image1.responsive-on-md.shadow-xl(data-uhd="", data-max_width="1065", alt="Lazy Mining - Tự động hoá tất cả")
+                // .container
+            // .section
+            // Steps Section
+            #how-it-works.section.bg-light
+                .container
+                    // Section Heading
+                    .section-heading.center
+                        h2.heading.text-dark-gray
+                            | Tất cả trong 3 bước đơn giản
+                        |
+                        p.paragraph
+                            | Bạn cần đăng ký tài khoản trước khi thực hiện 3 bước bên dưới.
+                            | Lưu ý: tài khoản của bạn có thể đăng nhập ở nhiều nơi: ứng dụng di động Lazy Mining, Lazy Desktop, Lazy Websites.
+                    // .section-heading
+                    // UI Steps
+                    .ui-showcase-blocks.ui-steps
+                        // Step 1
+                        .step-wrapper
+                            span.step-number.ui-gradient-blue 1
+                            |
+                            .row
+                                .col-md-6(data-vertical_center="true")
+                                    h4.heading.text-dark-gray
+                                        | Cài đặt Lazy Desktop lên máy đào
+                                    |
+                                    p.paragraph
+                                    |
+                                    a.btn-link.btn-arrow(href="http://github.com/vinhthien0301/lazy-desktop/releases") Tải Lazy Desktop
+                                |
+                                .col-md-6
+                                    img#image3.responsive-on-xs(data-uhd="", alt="Lazy Mining - Tự động hoá tất cả", data-max_width="464")
+                        // Step 2
+                        .step-wrapper
+                            span.step-number.ui-gradient-blue 2
+                            |
+                            .row
+                                .col-md-6(data-vertical_center="true")
+                                    h4.heading.text-dark-gray
+                                        | Cài đặt Lazy Mining trên thiết bị di động
+                                    |
+                                    p.paragraph
+                                    |
+                                    a.btn-link.btn-arrow(href="#") Tải Lazy Mining
+                                |
+                                .col-md-6
+                                    img.responsive-on-xs(src="assets/img/mockups/lazy-mobile-screenshot.png", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả", data-max_width="445")
+                        // Step 2
+                        .step-wrapper
+                            span.step-number.ui-gradient-blue 3
+                            |
+                            .row
+                                .col-md-6(data-vertical_center="true")
+                                    h4.heading.text-dark-gray
+                                        | Quản lý máy đào trên web
+                                    |
+                                    p.paragraph
+                                    |
+                                    a.btn-link.btn-arrow(href="#") Đăng nhập ngay
+                                |
+                                .col-sm-6
+                                    img.responsive-on-xs(src="assets/img/mockups/web-login-screenshot.png", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả", data-max_width="451")
+                // .container
+            // .section
+            // Support Section
+            #support.section.bg-dark-gray
+                .container
+                    .row
+                        // Text Column
+                        .col-lg-6.col-md-5(data-vertical_center="true")
+                            // Section Heading
+                            .section-heading.mb-0.center-on-md
+                                h2.heading
+                                    | Luôn luôn sẵn sàng hỗ trợ bạn
+                                |
+                                p.paragraph
+                                    | Ý tưởng cải tiến của bạn luôn được chúng tôi tiếp thu và phát triển hệ thống ngày một tốt hơn.
+                                |
+                                .row.ui-icon-blocks.ui-blocks-h.icons-md.mt-2
+                                    .col-4.ui-icon-block.animate.text-left.mb-0.center-on-md(data-show="fade-in-up")
+                                        .icon.icon-phone
+                                        |
+                                        h4.heading.mb-1 200k
+                                        |
+                                        p
+                                            | Lắng nghe cải tiếng
+                                    |
+                                    .col-4.ui-icon-block.animate.text-left.mb-0.center-on-md(data-show="fade-in-up")
+                                        .icon.icon-trophy
+                                        |
+                                        h4.heading.mb-1 4.5
+                                        |
+                                        p
+                                            | Điểm đánh giá
+                                    |
+                                    .col-4.ui-icon-block.animate.text-left.mb-0.center-on-md(data-show="fade-in-up")
+                                        .icon.icon-support
+                                        |
+                                        h4.heading.mb-1 500k
+                                        |
+                                        p
+                                            | Hỗ trợ 24/7
+                                // .row
+                            // .section-heading
+                        // Image Column
+                        .col-lg-6.col-md-7.img-block.animate(data-show="fade-in-left", data-vertical_center="true")
+                            img.img-fluid(src="assets/img/support/applify-support.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="", data-max_width="460")
+                    // .row
+                // .container
+            // .section
+            // &lt;!&ndash;  Testimonial Section &ndash;&gt;
+            // <div id="testimonials" class="section">
+            // <div class="container">
+            // &lt;!&ndash; Card Heading &ndash;&gt;
+            // <div class="section-heading center">
+            // <h2 class="heading text-indigo">
+            // Người dùng nói gì về chúng tôi?
+            // </h2>
+            // <p class="paragraph">
+            // </p>
+            // </div>&lt;!&ndash; .section-heading &ndash;&gt;
+            // &lt;!&ndash; Slider  &ndash;&gt;
+            // <div class="ui-testimonials slider owl-carousel owl-theme">
+            // &lt;!&ndash; Testimonials Item 1 &ndash;&gt;
+            // <div class="item">
+            // &lt;!&ndash; Card &ndash;&gt;
+            // <div class="ui-card shadow-md">
+            // <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            // labore et dolore.</p>
+            // </div>
+            // &lt;!&ndash; User &ndash;&gt;
+            // <div class="user">
+            // <div class="avatar"><img alt="Lazy Mining - Tự động hoá tất cả" src="assets/img/avatars/avatar1-sm.png">
+            // </div>
+            // <div class="info">
+            // <h6 class="heading text-dark-gray">Vicky Stout</h6>
+            // <p class="sub-heading">Founder at Smith &amp; Co</p>
+            // </div>
+            // </div>
+            // </div>
+            // &lt;!&ndash; Testimonials Item 2 &ndash;&gt;
+            // <div class="item">
+            // &lt;!&ndash; Card &ndash;&gt;
+            // <div class="ui-card shadow-md">
+            // <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            // commodo.</p>
+            // </div>
+            // &lt;!&ndash; User &ndash;&gt;
+            // <div class="user">
+            // <div class="avatar"><img alt="Lazy Mining - Tự động hoá tất cảApp Landing Page" src="assets/img/avatars/avatar2-sm.png">
+            // </div>
+            // <div class="info">
+            // <h6 class="heading text-dark-gray">Jack Smith</h6>
+            // <p class="sub-heading">Founder at Smith &amp; Co</p>
+            // </div>
+            // </div>
+            // </div>
+            // &lt;!&ndash; Testimonials Item 3 &ndash;&gt;
+            // <div class="item">
+            // &lt;!&ndash; Card &ndash;&gt;
+            // <div class="ui-card shadow-md">
+            // <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            // pariaturin.</p>
+            // </div>
+            // &lt;!&ndash; User &ndash;&gt;
+            // <div class="user">
+            // <div class="avatar"><img alt="Lazy Mining - Tự động hoá tất cả" src="assets/img/avatars/avatar3-sm.png">
+            // </div>
+            // <div class="info">
+            // <h6 class="heading text-dark-gray">Chérel Doe</h6>
+            // <p class="sub-heading">Founder at Smith &amp; Co</p>
+            // </div>
+            // </div>
+            // </div>
+            // &lt;!&ndash; Testimonials Item 4 &ndash;&gt;
+            // <div class="item">
+            // &lt;!&ndash; Card &ndash;&gt;
+            // <div class="ui-card shadow-md">
+            // <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            // pariatur ac nisi.</p>
+            // </div>
+            // &lt;!&ndash; User &ndash;&gt;
+            // <div class="user">
+            // <div class="avatar"><img alt="Lazy Mining - Tự động hoá tất cả" src="assets/img/avatars/avatar4-sm.png">
+            // </div>
+            // <div class="info">
+            // <h6 class="heading text-dark-gray">Derick Watts</h6>
+            // <p class="sub-heading">Founder at Smith &amp; Co</p>
+            // </div>
+            // </div>
+            // </div>
+            // &lt;!&ndash; Testimonials Item 5&ndash;&gt;
+            // <div class="item">
+            // &lt;!&ndash; Card &ndash;&gt;
+            // <div class="ui-card shadow-md">
+            // <p>Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum
+            // sagittis.</p>
+            // </div>
+            // &lt;!&ndash; User &ndash;&gt;
+            // <div class="user">
+            // <div class="avatar"><img alt="Lazy Mining - Tự động hoá tất cả" src="assets/img/avatars/avatar5-sm.png">
+            // </div>
+            // <div class="info">
+            // <h6 class="heading text-dark-gray">Jane Austin</h6>
+            // <p class="sub-heading">Founder at Smith &amp; Co</p>
+            // </div>
+            // </div>
+            // </div>
+            // </div>&lt;!&ndash; .ui-testimonials  &ndash;&gt;
+            // </div>&lt;!&ndash; .container &ndash;&gt;
+            // </div>&lt;!&ndash; .section &ndash;&gt;
+            // Client Logos Section
+            .section.ui-clients-logos.section-sm
+                .container
+                    .d-flex.justify-content-between
+                        div
+                            img(src="assets/img/clients-logos/logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                        |
+                        div
+                            img(src="assets/img/clients-logos/logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                        |
+                        div
+                            img(src="assets/img/clients-logos/logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                        |
+                        div
+                            img(src="assets/img/clients-logos/logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                        |
+                        div
+                            img(src="assets/img/clients-logos/logo.png", alt="Lazy Mining - Tự động hoá tất cả", data-uhd="")
+                    // .row
+                // .container
+            // .ui-clients-logos
+            // Footer
+            footer.ui-footer.bg-indigo
+                .container.pt-6.pb-6
+                    .row
+                        .col-md-4.col-sm-6.footer-about.footer-col.center-on-sm
+                            img(src="assets/img/logo/applify-logo-white.png", data-uhd="", alt="Lazy Mining - Tự động hoá tất cả")
+                            |
+                            p.mt-1
+                                | Được phát triển bởi đội ngũ lập trình viên giàu kinh nghiệm. Chúng tôi cam kết đem đến cho khách hàng sự hài lòng nhất.
+                        |
+                        .col-md-2.col-6.footer-col
+                            h6.heading.footer-heading Điều hướng nhanh
+                            |
+                            ul.footer-nav
+                                li
+                                    a(href="#") Hướng dẫn sử dụng
+                                |
+                                li
+                                    a(href="/login") Đăng nhập
+                                |
+                                li
+                                    a(href="/signup") Đăng ký
+                                |
+                                li
+                                    a(href="#") Giá cả
+                        |
+                        .col-md-2.col-6.footer-col
+                            h6.heading.footer-heading Về LAZY MINING
+                            |
+                            ul.footer-nav
+                                li
+                                    a(href="#") Liên hệ
+                        |
+                        .col-md-4.col-sm-6.footer-col.center-on-sm
+                            h6.heading.footer-heading Đăng ký bản tin
+                            // Form
+                            form#sign-up-form(autocomplete="on", name="sign-up-form")
+                                .form-group
+                                    .input-group
+                                        // Email Input
+                                        input.input.form-control(autocomplete="email", data-validation="required", data-validation-error-msg="Vui lòng nhập địa chỉ Email", name="email", placeholder="Địa chỉ Email")
+                                        |
+                                        .input-group-append
+                                            // Submit Button
+                                            button.btn.ui-gradient-peach
+                                                | Đăng ký
+                                                span.fa.fa-send
+                            |
+                            div
+                                a.btn.ui-gradient-blue.btn-circle.shadow-md(href="https://www.facebook.com/Lazy-Mining-797049757131819/")
+                                    span.fa.fa-facebook
+                                // <a class="btn ui-gradient-peach btn-circle shadow-md">
+                                // <span class="fa fa-instagram"></span>
+                                // </a>
+                                // <a class="btn ui-gradient-green btn-circle shadow-md">
+                                // <span class="fa fa-twitter"></span>
+                                // </a>
+                                // <a class="btn ui-gradient-purple btn-circle shadow-md">
+                                // <span class="fa fa-pinterest"></span>
+                                // </a>
+                    // .row
+                // .container
+                // Footer Copyright
+                .footer-copyright.bg-gray
+                    .container
+                        .row
+                            // Copyright
+                            .col-sm-6.center-on-sm
+                                p
+                                    | © 2018
+                                    a(href="#", target="_blank", title="Công ty TNHH phần mềm Tech Storm") Công ty TNHH phần mềm Tech Storm
+                            // Social Icons
+                            .col-sm-6.text-right
+                                ul.footer-nav
+                                    li
+                                        a(href="#")
+                                            | Chính sách
+                                    |
+                                    li
+                                        a(href="#")
+                                            | Điều khoản
+                                    |
+                                    li
+                                        a(href="#")
+                                            | Câu hỏi thường gặp
+                    // .container
+                // .footer-copyright
+            // .ui-footer
+        // .main
+        // Scripts
+        script(src="assets/js/libs/jquery/jquery-3.2.1.min.js")
+        script(src="assets/js/libs/waypoints/jquery.waypoints.min.js")
+        script(src="assets/js/libs/slider-pro/jquery.sliderPro.min.js")
+        script(src="assets/js/libs/owl.carousel/owl.carousel.min.js")
+        script(src="assets/js/libs/prism/prism.js")
+        //
+          # Google Maps
+          # Add Your Google Maps API Key Below !!
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5B2iXEELo6aIReGYLJdVKBlzHnrM0YLU")
+        script(src="assets/js/applify/ui-map.js")
+        script(src="assets/js/libs/form-validator/form-validator.min.js")
+        script(src="assets/js/libs/bootstrap.js")
+        script(src="assets/js/applify/build/applify.js")
+        script(src="assets/js/index.js")
+        script(type="text/javascript").
+            window._sbzq||function(t){t._sbzq=[];var e=t._sbzq;e.push(["_setAccount", "acpyzmizgzyzmzygotdd"]);var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://widgetv4.subiz.com/static/js/app.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(a,s)}(window);
