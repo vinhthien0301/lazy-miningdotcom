@@ -3,6 +3,6 @@ node_modules
 /package-lock.json
 out.server
 package-lock.json
-lazy-server.log.previous
 config.json
 sql/create_user_access.sql
+lazy-miningdotcom.log.previous

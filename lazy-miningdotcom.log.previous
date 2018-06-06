@@ -1,7 +1,0 @@
-[33m[2018-06-06 20:51:55.802] [WARN] [default] - [39mApp: booting
-[32m[2018-06-06 20:51:55.813] [INFO] [default] - [39mApp: listening on 169.254.7.62:4352
-[0mGET / [32m200 [0m1452.414 ms - 24403[0m
-[0mGET /assets/img/3rd-party-logos/coin/storj.svg [33m404 [0m23.333 ms - 38[0m
-[0mGET /assets/img/3rd-party-logos/coin/storj.svg [33m404 [0m16.621 ms - 38[0m
-[0mGET /assets/img/3rd-party-logos/coin/storj.svg [33m404 [0m3.442 ms - 38[0m
-error: Forever detected script was killed by signal: SIGKILL
